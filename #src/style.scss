@@ -1,0 +1,91 @@
+@import "./reset.scss";
+.wrapper {
+  min-height: 100vh;
+  min-width: 100%;
+  padding: 2.25rem;
+  background-color: #ffffff;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+  display: flex;
+}
+.hero-img {
+  margin-right: 3.25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  object-fit: cover;
+  max-width: fit-content;
+  min-height: 100%;
+  &__item {
+  }
+}
+.description-box {
+  max-width: 58%;
+}
+.breadcrumb {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+.breadcrumb--active {
+  color: #d2d5da;
+}
+.title {
+  max-width: 55%;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.description {
+  margin-bottom: 2.5rem;
+}
+.hightlights-list-title {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.hightlights-list {
+  line-height: 2rem;
+  margin-bottom: 2.5rem;
+  padding-left: 0.75rem;
+  &__item {
+    list-style-type: disc;
+    list-style-position: inside;
+    &::marker {
+      font-size: 0.6875rem;
+    }
+  }
+}
+.product-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 2.5rem;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+}
+.price {
+  margin: auto;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.button-box {
+  &__cart-btn {
+    background-color: #652cd1;
+    color: #f9fafb;
+    margin-right: 1.5rem;
+  }
+  &__wish-btn {
+    border: 0.0625rem solid #d2d5da;
+  }
+}
+.btn {
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+}
+.heart-icon {
+  margin-right: 0.375rem;
+}
