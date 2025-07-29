@@ -2,22 +2,25 @@
 .wrapper {
   min-height: 100vh;
   min-width: 100%;
-  padding: 2.25rem;
   background-color: #ffffff;
   font-family: "Outfit", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: #000000;
+}
+.container {
   display: flex;
+  padding: 2.25rem;
 }
 .hero-img {
   margin-right: 3.25rem;
   border-radius: 0.5rem;
   overflow: hidden;
-  object-fit: cover;
-  max-width: fit-content;
-  min-height: 100%;
+  // object-fit: cover;
+  // max-width: fit-content;
+  // min-height: fit-content;
   &__item {
+    min-height: fit-conten;
   }
 }
 .description-box {
@@ -57,20 +60,39 @@
     }
   }
 }
-.product-options {
+.product-details {
+  max-width: 57%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: end;
+  align-items: center;
   padding: 0.75rem 1.5rem;
   margin-bottom: 2.5rem;
   background-color: #f3f4f6;
   border-radius: 0.5rem;
 }
+.product-options {
+  font-size: 1rem;
+  font-weight: 600;
+  display: grid;
+  justify-items: start;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 0.375rem;
+  grid-column-gap: 5rem;
+  min-width: 100%;
+  &__item {
+    display: block;
+  }
+  &__lable {
+    color: #394150;
+    font-weight: 300;
+  }
+}
 .price {
-  margin: auto;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
 }
-
 .button-box {
   &__cart-btn {
     background-color: #652cd1;
@@ -88,4 +110,9 @@
 }
 .heart-icon {
   margin-right: 0.375rem;
+}
+
+@media (max-width: 640px) {
+}
+@media (min-width: 641px) and (max-width: 1024px) {
 }
